@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Mahir Munye </title>
+
+        <style>
+
+            .column {
+                float: inline-end;
+                width: 40%
+            }
+
+            .column {
+                float: inline-start;
+                width: 40%
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            img {
+                border-radius: 50%;
+            }
+
+            /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+        </style>
+
+        <script>
+            function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+
+            
+            </script>
+
+    </head>
+
+    <body>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</button>
+            <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+        </div>
+
+        
+        
+
+            <div id="Home" class="tabcontent">
+            <div class="row">
+            <div class="column">
+
+                <img src="pfp.jpg" alt="Avatar" width="300" height="300">
+
+            </div>
+
+            <div class="column">
+                
+                <h1>Mahir Munye</h1>
+                
+                <h3>
+                    Physics graduate with strong analytical, data analysis, and problem-solving skills. Passionate about applying technical knowledge and communication skills to drive innovation and make an impact.
+                </h3>
+
+            </div>
+
+        </div>
+            </div>
+
+            <div id="Portfolio" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+            </div>
+
+            <div id="Education" class="tabcontent">
+            <h3>Education</h3>
+
+        <p>
+            <b>The University of Manchester</b>
+            <br>Bachelor's Degree, Physics</br>
+        </p>
+
+        <p>
+            <b>Loreto College</b>
+            <br> A-Levels Completed: Maths (A*), Physics (A), Chemistry (A)</br>
+        </p>
+
+        <p>
+            <b>Chorlton High School</b>
+            <br> 13 GCSEs Completed Including Maths (8) and English (5)</br>
+        </p>
+            </div>
+
+
+        <button type="button" class="collapsible">Open Collapsible</button>
+        <div class="content">
+            <p>Lorem ipsum</p>
+        </div>
+
+        <h3> More Information </h3>
+
+        <h3>Skills</h3>
+
+        <ul>
+            <li></li>
+        </ul>
+
+
+        
+
+
+        <h3>Contact Details:</h3>
+        <p>
+            Email: <a href="mailto:mahir.mm@outlook.com">mahir.mm@outlook.com</a>
+            Linkedin: <a href="www.linkedin.com/in/mahir-munye-188187301">Linkedin</a>
+        </p>
+
+
+
+    </body>
+
+</html>
+
+
+
+
